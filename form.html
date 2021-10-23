@@ -1,0 +1,62 @@
+<IDOCTYPE html>
+<html>
+        <head>
+            <Title>Formulir</Title>
+        </head>
+        <body>
+            <h2>Black Goose Bistro | Pizza-on-demand</h2>
+            <p>Our 12" wood-fired pizzas are available 
+            for delivery. Build your costum pizza and we'll deliver it within an hour </p>
+            <form action="http://blackgoosebistro.com/pizza.php" method="post">
+            <p>Your information</p>
+            <label>Name:</label>
+            <input type="text" name="customername">
+            <br>
+            <label>Address:</label>
+            <input type="text" name="address">
+            <br>
+            <label>Telephon Number:</label>
+            <input type="text" name="telephon">
+            <br>
+            <label>Email</label>
+            <input type="text" name="email">
+            <br>
+            <label>Delivery Instruction</label>
+            <textarea maxlength="400" name="instruction"></textarea>
+            <h3>Design Your Dream Pizza</h3>
+            <p>Pizza Spech</p>
+            <br>
+            <label>Crust (Choose one):</label>
+            <br>
+            <input type="radio" name="pizzacrust" value="classic">Classic White
+            <br>
+            <input type="radio" name="pizzacrust" value="multigrain">Multigrain
+            <br>
+            <input type="radio" name="pizzacrust" value="cheese">Cheese stuffed crust
+            <br>
+            <input type="radio" name="pizzacrust" value="glutenfree">Gluten free
+            <br>
+            <label>Toppings (Choose as many as you want):</label>
+            <br>
+            <input type="checkbox" name="toppings[]" value="redsauce">Red Sauce
+            <br>
+            <input type="checkbox" name="toppings[]" value="whitesauce">White Sauce
+            <br>
+            <input type="checkbox" name="toppings[]" value="mozzarella">Mozzarella cheese
+            <br>
+            <input type="checkbox" name="toppings[]" value="pepperoni">Pepperoni
+            <br>
+            <input type="checkbox" name="toppings[]" value="mushrooms">Mushrooms
+            <br>
+            <input type="checkbox" name="toppings[]" value="peppers">Peppers
+            <br>
+            <input type="checkbox" name="toppings[]" value="anchovies">Anchovies
+            <br>
+            <label>How many Pizzas:</label>
+            <input type="number" name="number" max="6">
+            <br>
+            <button type="submit">Bring me a pizza!</button>
+            <button type="reset">Reset></button>
+            </form>
+        </body>
+    </html>
